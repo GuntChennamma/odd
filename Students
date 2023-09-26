@@ -1,0 +1,47 @@
+package com.java.oddnumbers;
+
+import java.util.Scanner;
+
+public class Students {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter the marks of ten students /n");
+		
+		float Student1 = sc.nextInt();
+		float Student2 = sc.nextInt();
+		float Student3= sc.nextInt();
+		float Student4 = sc.nextInt();
+		float Student5 = sc.nextInt();
+		float Student6 = sc.nextInt();
+		float Student7= sc.nextInt();
+		float Student8 = sc.nextInt();
+		float Student9 = sc.nextInt();
+		float Student10 = sc.nextInt();
+	float total ;
+   
+    total=Student1+Student2+Student3+Student4+Student5+Student6+Student7+Student8+Student9+Student10;
+// to give grades 
+    char grade = 0 ;
+
+   if(total>90) {
+	   grade = 'A';
+   }
+   else if (total>80) {
+	   grade = 'B';
+   }
+   else if (total>60) {
+	   grade='C';
+   }
+   else if (total>=40) {
+	   grade = 'D';
+   }
+   else if (total<40) {
+	   grade = 'F';
+   }
+   System.out.println("The grade  = '" + grade + " ' ");
+   
+	}
+}
+
+
